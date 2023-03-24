@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TD1Ex2';
 
+  nomClasse:string="rouge";
+  bouton:boolean=false;
+
   imageUrl:string="https://www.referenseo.com/wp-content/uploads/2019/03/image-attractive.jpg";
   tailleImage: number=20;
 

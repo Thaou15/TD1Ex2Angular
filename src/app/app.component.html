@@ -1,13 +1,14 @@
 
-<h1 [innerHTML]> TD1Ex2</h1>
+<h1 [innerHTML]="title"></h1>
 
-<p [ngClass] class="rouge"> Ceci est une application </p>
+<p [ngClass]="nomClasse"> Ceci est une application </p>
 
-<button [disabled]> Valider</button><br><br>
-<button onClick() > Clique </button>
+<button [disabled]="bouton"> Valider</button><br><br>
 
-<img [src]= imageUrl alt="Mon image">
-<img [width] = tailleImage>
+<!-- <button onClick() > Clique </button> -->
+
+<img [src]= "imageUrl" alt="Mon image"> <br><br>
+
 
 Zone de saisie : <input type="text" [(ngModel)]="inf">
 <p>Informations saisies : {{inf}}</p>
