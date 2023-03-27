@@ -11,6 +11,7 @@
 
 <button (click)="cacherDetails()" *ngIf="detailBouton;else faux">Cacher détails</button>
 <ng-template #faux><button (click)="cacherDetails()">Montrer détails</button></ng-template>
+
 <table>
     <tr>
         <th>Nom</th>
@@ -31,6 +32,7 @@
 
 <br><br>
 Zone de saisie : <input type="text" [(ngModel)]="inf">
+<button (click)="ajouterUser()">Add</button>
 <p>Informations saisies : {{inf}}</p>
 
 

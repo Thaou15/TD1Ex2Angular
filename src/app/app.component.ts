@@ -44,5 +44,15 @@ export class AppComponent {
     console.log ("Bouton cliqué");
   }
 
+  
+  oUtil:{nom:string, prenom:string, email:string, tel:string, age:number} = 
+  {"nom":"test", "prenom":"Test", "email":"Test", "tel":"test", "age":24}
+  //push : pour ajouter un objet oUtil au tableau utilisateur
+  ajouterUser():void
+  {
+    this.oUtil.nom=this.inf;
+    this.utilisateur.push(this.oUtil);
+  }
+
 
 }
