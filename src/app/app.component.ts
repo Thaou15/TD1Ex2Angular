@@ -21,7 +21,7 @@ export class AppComponent {
    
   ]
 
-  onClick()
+  onClick():void
   {
     console.log ("Bouton cliqué");
   }
