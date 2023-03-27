@@ -18,8 +18,26 @@ export class AppComponent {
 
   utilisateur: any[] = [
     {"nom":"Durant", "prenom":"Charles", "email":"d.c@gmail.com", "telephone":"010203", "age":23},
+    {"nom":"Domoinge", "prenom":"Lucas", "email":"d.l@gmail.com", "telephone":"050208", "age":22},
+    {"nom":"Dupont", "prenom":"Paul", "email":"d.pa@gmail.com", "telephone":"060208", "age":18},
+    {"nom":"Demont", "prenom":"Pierre", "email":"d.p@gmail.com", "telephone":"020203", "age":44},
+    {"nom":"Dom", "prenom":"Marie", "email":"d.m@gmail.com", "telephone":"010203", "age":36}
    
   ]
+
+  detailBouton:boolean=true;
+  cacherDetails():void
+  { 
+   if(this.detailBouton)
+    {
+      this.detailBouton = false;
+    }
+    else
+    {
+       this.detailBouton = true;
+    } 
+
+  }
 
   onClick():void
   {
